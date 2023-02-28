@@ -6,6 +6,7 @@ const getData = async function (numUsers) {
     `https://randomuser.me/api?results=${numUsers}`
   );
   const data = await userRequest.json();
+
   const userResults = data.results;
   console.log(data);
   displayUsers(userResults);
